@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tenki</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+
+	<link rel="shortcut icon" type="image/x-icon" href="img/nave-ufo-azul.png">
+</head>
+<body>
+	<div class="navegador container">
+		<div class="d-flex justify-content-between align-items-center my-3">
+
+			<img class="img-fluid" style="width: 100px" src="img/nave-ufo-blanco.png">
+
+			<ul class="nav">
+			  <li class="nav-item">
+			    <a class="nav-link" href="#">Api</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="#">Code</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="#">Producer</a>
+			  </li>
+			</ul>
+		</div>
+	</div>
+
+	<section class="main my-5">
+	    <div class="container">
+	    	<h1 class="display-1 my-5 text-center">Tenki</h1>
+
+			<p class="my-5 text-center">Pay attention! This is very simple. Place the name of the city you want in the bar then place a comma (',') followed by the country to which the chosen city belongs.
+			After pressing search, Enki the friendly little green alien will tell you the weather in your city.</p>
+
+			<div class="input text-center my-5">
+		      	<input type="text" placeholder="Enter the city" class="input_text barra">
+		      	<button type="submit" class="submit boton"><i class="fas fa-search"></i> Search</button>
+		    </div>
+
+		    <div class="row tarjeta mt-5 justify-content-center">
+				<div class="col-12 col-md-7">
+
+					<h2 class="name text-center display-3" id="name"></h2>
+
+					<div class="row justify-content-center align-items-center">
+						<div class="icono col-auto"></div>
+
+						<div class="col-auto text-left">
+
+							<p class="temp"></p>
+							
+							<p class="desc"></p>
+						</div>
+					</div>
+
+					<div class="row justify-content-between my-3">
+						<div class="col-auto tempMax"></div>
+
+						<div class="col-auto tempMin"></div>
+
+						<div class="humidity"></div>
+					</div>
+
+
+					<div class="row col-12 justify-content-center">
+						<div class="col-auto sunrise" title="Sunrise"></div>
+
+						<div class="col-auto sunset" title="Sunset"></div>
+
+						<div class="col-auto wind" title="Wind speed"></div>
+
+						<div class="col-auto clouds" title="Clouds"></div>
+					</div>
+				</div>
+			</div>
+
+		    <div class="imagen my-5"></div>
+	    </div>
+	</section>
+
+	<script src="js/app.js"></script>
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+
+/*
+ROJO      rgb(193,69,77);
+AMARILLO  rgb(222,148,13);
+AZUL      rgb(67,135,145);
+
+*/
+
+body {
+	background: rgb(67,135,145);
+}
+
+h1 {
+	font-family: 'Dancing Script', cursive;
+	color: rgb(244,244,244);
+	font-size: 40px;
+	vertical-align: middle;
+}
+
+p, h2 {
+	font-family: 'Poppins', sans-serif;
+	color: rgb(244,244,244);
+}
+
+p {
+	font-size: 25px;
+}
+
+a {
+	font-family: 'Poppins', sans-serif;
+	color: rgb(244,244,244);
+	font-size: 20px;
+}
+
+a:hover {
+	color: rgb(222,148,13);
+}
+
+.boton {
+	padding: 10px 20px;
+	background: rgb(193,69,77);
+	color: rgb(255,255,255);
+	border: none;
+	margin-left: -5px;
+	cursor: pointer;
+	border-radius: 0 20px 20px 0;
+}
+
+.barra {
+	width: 70%;
+	padding: 9px 20px;
+	border: 1px solid rgb(205,205,205);
+	border-radius: 20px  0 0 20px;
+}
+
+.temp {
+	font-size: 50px;
+	color: rgb(222,148,13);
+}
+
+.icono img {
+	width: 150px;
+}
