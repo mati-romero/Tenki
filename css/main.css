@@ -36,6 +36,10 @@ a:hover {
 	color: rgb(222,148,13);
 }
 
+.nave {
+	width: 100px;
+}
+
 .boton {
 	padding: 10px 20px;
 	background: rgb(193,69,77);
@@ -60,4 +64,24 @@ a:hover {
 
 .icono img {
 	width: 150px;
+}
+
+@media (max-width: 600px) {
+	p, a {
+		font-size: 15px;
+	}
+
+	.nave {
+		width: 50px;
+	}
+
+	.barra {
+		width: auto;
+	}
+}
+
+@media (max-width: 320px) {
+	.barra {
+		width: 170px;
+	}
 }

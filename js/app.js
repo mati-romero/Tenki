@@ -30,7 +30,7 @@ function utcToHours(utcValue) {
 function imageGenerator(temp, wind, clouds, humidity) {
 
   //Celsius
-  var temp = Math.round(parseInt(temp)  - 273.15);
+  temp = Math.round(parseInt(temp)  - 273.15);
 
   //Tornado
   if (wind>25) {
@@ -72,10 +72,15 @@ function imageGenerator(temp, wind, clouds, humidity) {
     else {
       ico.innerHTML = "<img class='img-fluid' src='img/iconos/sol.png'>";
 
-      if (temp > 27) {
+      if (temp > 35) {
         imagen.innerHTML = "<img class='img-fluid' src='img/soladooo.gif'>";
         console.log("Despejado y caluroso");
-      } else {
+      }
+      else if (temp > 15) {
+        imagen.innerHTML = "<img class='img-fluid' src='img/soladoo.gif'>";
+        console.log("Despejado y temperatura agradable");
+      }
+      else {
         imagen.innerHTML = "<img class='img-fluid' src='img/inverno.gif'>";
         console.log("Despejado y frio");
       }
