@@ -13,6 +13,7 @@ var tempMax = document.querySelector(".tempMax");
 var tempMin = document.querySelector(".tempMin");
 var imagen = document.querySelector(".imagen");
 var clouds = document.querySelector(".clouds");
+var alerta = document.querySelector(".alerta");
 
 function utcToHours(utcValue) {
   var myDate = new Date( utcValue *1000);
@@ -88,6 +89,15 @@ function imageGenerator(temp, wind, clouds, humidity) {
   }
 }
 
+function errorMessage() {
+  alerta.style.display = "block";
+  input.value ="";
+}
+
+function closeErrorMessage() {
+  alerta.style.display = "none";
+}
+
 button.addEventListener('click', function(name){
 fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=50a7aa80fa492fa92e874d23ad061374')
 .then(response => response.json())
@@ -121,5 +131,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=5
 
 })
 
-.catch(err => alert("Wrong city name!"));
+.catch(err => errorMessage());
 })
+
+/*alert("Wrong city name!")*/
